@@ -23,7 +23,7 @@ namespace Infinite.MVC.Week8.Test
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstraplux.css",
                       "~/Content/site.css"));
         }
     }

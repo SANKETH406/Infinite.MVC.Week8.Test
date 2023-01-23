@@ -9,11 +9,7 @@ namespace Infinite.MVC.Week8.Test.Models
 {
     public class Category
     {
-        public int Id { get; set; }
-
-        [Required]
-        [Column(TypeName = "varchar")]
-        [StringLength(50)]
+        public int Id { get; set; }       
         public string CategoryName { get; set; }
     }
 }

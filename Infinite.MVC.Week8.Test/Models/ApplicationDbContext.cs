@@ -15,6 +15,6 @@ namespace Infinite.MVC.Week8.Test.Models
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; } 
-        //public DbSet<PackSize> PackSize { get; set; }
+        public DbSet<PackSize> PackSize { get; set; }
     }
 }

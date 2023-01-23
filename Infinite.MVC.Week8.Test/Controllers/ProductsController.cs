@@ -18,6 +18,11 @@ namespace Infinite.MVC.Week8.Test.Controllers
         }
         // GET: Products
 
+        public ActionResult Home()
+        {
+            return View();
+        }
+
         public ActionResult Index()
         {
             var Products = _context.Products.ToList();
@@ -28,13 +33,13 @@ namespace Infinite.MVC.Week8.Test.Controllers
         {
             var categories = _context.Categories.ToList();
             ViewBag.Categories = categories;
-            return View();  
-            
+
+            var packsize = _context.PackSize.ToList();
+            ViewBag.Packsize = packsize;
+            return View();
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-
         public ActionResult Create(Product product)
         {
             if (ModelState.IsValid)
@@ -45,8 +50,11 @@ namespace Infinite.MVC.Week8.Test.Controllers
             }   
             var categories = _context.Categories.ToList();
             ViewBag.Categories = categories;
+
+            var packsize = _context.PackSize.ToList();
+            ViewBag.Packsize = packsize;            
             return View();
-        }      
-        
+
+        }    
     }
 }

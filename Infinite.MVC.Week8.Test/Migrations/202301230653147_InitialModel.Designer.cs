@@ -13,7 +13,7 @@ namespace Infinite.MVC.Week8.Test.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202301221806283_InitialModel"; }
+            get { return "202301230653147_InitialModel"; }
         }
         
         string IMigrationMetadata.Source
